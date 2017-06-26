@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import logo from './logo.svg'
 import './App.css'
-import fire from './fire'
+import fire from './js/fire'
 
 class App extends Component {
   constructor(props) {
