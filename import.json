@@ -1,0 +1,26 @@
+{
+	"items": {
+		"375196": {
+			"building": "a",
+			"category": "CALCULATOR",
+			"desc": "CALCULATOR,FINANCIAL,HP12C",
+			"cur_inventory": 1,
+			"inventory_value": 84.99,
+			"max_inventory": 10,
+			"min_inventory": 1,
+			"unit_rate": 84.99,
+			"units_per_pkg": 1
+		},
+		"364255": {
+			"building": "b",
+			"category": "CALENDAR",
+			"desc": "DESKPAD,2017,MONTHLY,22X17",
+			"cur_inventory": 8,
+			"inventory_value": 79.92,
+			"max_inventory": 10,
+			"min_inventory": 1,
+			"unit_rate": 9.99,
+			"units_per_pkg": 1
+		}
+	}
+}
