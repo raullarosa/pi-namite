@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
-import logo from './logo.svg'
-import './App.css'
-import fire from './js/fire'
+import './styles/App.css'
+import fire from './fire'
+import Header from './components/Header'
 
 class App extends Component {
   constructor(props) {
@@ -10,26 +10,10 @@ class App extends Component {
   }
   render() {
     return (
-      <div className="App">
-        <div className="App-header">
-          <h2>Welcome to React</h2>
-        </div>
+      <div className="App-header">
       </div>
     );
   }
 }
-
-//get elements
-const preObject = document.getElementById('items');
-
-//create reference
-const dfRefObject = fire.database().ref().child('items');
-
-//sync object changes
-dfRefObject.on('value', snap =>console.log(snap.val())); ///{preObject.innerText = JSON.stringify(snap.val(), 3)});
-
-
-            
-
 
 export default App;
