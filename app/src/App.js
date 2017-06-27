@@ -3,6 +3,7 @@ import './styles/App.css'
 import fire from './fire'
 import Header from './components/Header'
 import Table from './components/Table'
+import InventoryForm from './components/InventoryForm'
 
 class App extends Component {
   constructor(props) {
@@ -14,6 +15,7 @@ class App extends Component {
       <div>
         <Header />
         <Table />
+        <InventoryForm />
       </div>
     );
   }
