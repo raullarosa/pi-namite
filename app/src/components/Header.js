@@ -12,6 +12,8 @@ class Header extends Component {
 				<div className="nav-wrapper">
 					<a href="/" className="brand-logo">pi-namite</a>
 					<ul id="nav-mobile" className="right hide-on-med-and-down">
+						<li><input type="text"
+							placeholder="Search..."></input></li>
 						<li><a href="#stats">Stats</a></li>
 						<li><a href="#history">History</a></li>
 						<li><a href="#login">Login</a></li>
