@@ -4,6 +4,7 @@ import fire from './fire'
 import Header from './components/Header'
 import Table from './components/Table'
 import InventoryForm from './components/InventoryForm'
+import { Button } from 'react-materialize'
 
 class App extends Component {
 
@@ -34,6 +35,7 @@ class App extends Component {
         <Header />
         <Table />
         <InventoryForm />
+        <Button floating fab='vertical' icon='add' className='ne-green-bg' waves='light' large style={{bottom: '45px', right: '24px'}}></Button>
       </div>
     );
   }

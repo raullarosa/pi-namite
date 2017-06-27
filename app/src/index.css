@@ -1,3 +1,7 @@
-body {
-  
+.ne-green-bg {
+    background-color: #67BD45;
+}
+
+.ne-green-bg:hover {
+    background-color: #67BD45;
 }
