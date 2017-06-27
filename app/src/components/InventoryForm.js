@@ -9,7 +9,7 @@ class InventoryForm extends Component {
 	render() {
 		return (
 			<div>
-				<div class="fixed-action-btn">
+				{/*<div class="fixed-action-btn">
 					<a class="btn-floating btn-large red" href="#inventory-form">
 						<i class="large material-icons">mode_edit</i>
 					</a>
@@ -22,7 +22,7 @@ class InventoryForm extends Component {
 					<div class="modal-footer">
 						<a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
 					</div>
-				</div>
+				</div>*/}
 			</div>
 		)
 	}
