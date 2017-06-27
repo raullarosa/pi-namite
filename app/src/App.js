@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import './styles/App.css'
 import fire from './fire'
 import Header from './components/Header'
+import Table from './components/Table'
 
 class App extends Component {
   constructor(props) {
@@ -10,7 +11,10 @@ class App extends Component {
   }
   render() {
     return (
-      <Header />
+      <div>
+        <Header />
+        <Table />
+      </div>
     );
   }
 }
