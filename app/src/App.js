@@ -19,4 +19,17 @@ class App extends Component {
   }
 }
 
+//get elements
+const preObject = document.getElementById('items');
+
+//create reference
+const dfRefObject = fire.database().ref().child('items');
+
+//sync object changes
+dfRefObject.on('value', snap =>console.log(snap.val())); ///{preObject.innerText = JSON.stringify(snap.val(), 3)});
+
+
+            
+
+
 export default App;
