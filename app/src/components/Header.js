@@ -1,21 +1,35 @@
 import React, { Component } from 'react'
 import '../styles/Header.css'
+import {Dropdown, Button, NavItem} from 'react-materialize'
 
 class Header extends Component {
 	constructor(props) {
 		super(props)
 		this.state = { }
 	}
+    
+    
 	render() {
 		return (
 			<nav>
+                    
+            
+            
 				<div className="nav-wrapper">
-					<a href="/" className="brand-logo">pi-namite</a>
+					
 					<ul id="nav-mobile" className="right hide-on-med-and-down">
 						<li><a href="#stats">Stats</a></li>
 						<li><a href="#history">History</a></li>
 						<li><a href="#login">Login</a></li>
 					</ul>
+                            <Dropdown trigger ={
+                    <Button >Building</Button>
+            }>
+	               <NavItem>A</NavItem>
+	               <NavItem>B</NavItem>
+	               <NavItem>C</NavItem>
+                </Dropdown>
+            
 					{/* <li><a href="#stats">Stats</a></li>
 						<li><a href="#history">History</a></li>
 						<li><a href="#login">Login</a></li>
@@ -24,11 +38,14 @@ class Header extends Component {
                                 <a href="#buildingA">A</a>
                                 <a href="#buildingB">B</a>
                                 <a href="#buildingC">C</a>
-                                </div>*/}
+                                </div>*/ }
 				</div>
 			</nav>
+            
 		)
 	}
 }
+
+
 
 export default Header

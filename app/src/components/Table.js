@@ -1,12 +1,25 @@
 import React, { Component } from 'react'
 import '../styles/Table.css'
+import fire from '../fire'
+
+
+
 
 class Table extends Component {
 	constructor(props) {
 		super(props)
 		this.state = {}
 	}
+
+
+  /*  function1(){
+        const preObject = document.getElementById('items')
+        const dbRefObject= fire.database().ref().child('items')
+        dbRefObject.on('value', snap => {preObject.innerText=JSON.stringify(snap.val(),null,3)})
+    }*/
 	render() {
+        
+        
 		return (
 			<table className="striped responsive-table">
 				<thead>
@@ -14,7 +27,7 @@ class Table extends Component {
 						<th>SKU</th>
 						<th>Description</th>
 						<th>Category</th>
-						<th>Buidling</th>
+						<th>Buidling</th>            
 						<th>Inventory</th>
 						<th>Value</th>
 						<th>Min Inventory</th>
@@ -24,9 +37,17 @@ class Table extends Component {
 					</tr>
 				</thead>
 
-				<tbody>
+        
+				<tbody id = 'tb'>
+            
+            
+            
 					{/*Building A*/}
+                    
+            
+            
 					<tr>
+                            
 						<td>375196</td>
 						<td>CALCULATOR,FINANCIAL,HP12C</td>
 						<td>Calculator</td>

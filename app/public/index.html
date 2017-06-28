@@ -23,7 +23,36 @@
   <div id="root"></div>
 
 	<!-- Import jQuery before materialize.js -->
+    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for building.." title="Type in a name">
 	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+    <script>
+           function myFunction() {
+            var input, filter, ul, li, a, i;
+            input = document.getElementById("myInput");
+            filter = input.value.toUpperCase();
+            ul = document.getElementById("tb");
+            li = ul.getElementsByTagName("tr");
+               for (i = 0; i < li.length; i++)
+                    console.log(li[i].getElementsByTagName("td")[3]);
+            for (i = 0; i < li.length; i++) {
+                a = li[i].getElementsByTagName("td")[3];
+                if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                    li[i].style.display = "";
+                } else {
+                    li[i].style.display = "none";
+
+                }
+            }
+                
+        }
+    </script>
+    
+    
+    
+    
+
+    
+    
 </body>
 </html>

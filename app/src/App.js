@@ -7,12 +7,12 @@ import InventoryForm from './components/InventoryForm'
 import { Button } from 'react-materialize'
 
 class App extends Component {
-
-  constructor(props) {
+    constructor(props) {
     super(props)
-    this.state = { 
-      itemsInventory: null
+    this.state = {
+        itemsInventory: null
     }
+    
 
 
     //create reference
@@ -20,7 +20,7 @@ class App extends Component {
 
     //sync object changes
     itemsRef.on('value', snap => {
-      this.state.itemsInventory = snap.val()
+     var bob= this.state.itemsInventory = snap.val()
       console.log(this.state.itemsInventory)
     });
 
@@ -31,6 +31,8 @@ class App extends Component {
       return (<div></div>)
     }
     return (
+
+            
       <div>
         <Header />
         <Table />
@@ -40,5 +42,8 @@ class App extends Component {
     );
   }
 }
+    
+
+    
 
 export default App;
